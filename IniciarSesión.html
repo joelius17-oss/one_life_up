@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One life Up</title>
+    <link rel="stylesheet" href="style_S.css">
+    <link rel="shortcut icon" href="imagenes/Icono.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="imagenes/Icono.png" alt="icono">
+            <h1>One Life Up</h1>
+        </div> 
+        <nav class="nav">
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <form class="login-form">
+        <h2>Iniciar sesión</h2>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <div class="contraseña">
+            <input type="checkbox" id="mostrarPass" onclick="mostrarContraseña()">
+            <label for="mostrarPass">Mostrar contraseña</label>
+        </div>
+
+        <button type="submit">Ingresar</button>
+        <p>
+            ¿todavía no tienes una cuenta? <a href="Registro.html">Regístrate aquí</a>.
+        </p>
+    </form>
+
+<div class="footer">
+        <p>&copy; 2024 One Life Up. Todos los derechos reservados.</p>
+    </div>
+
+    
+
+</body>
+<script>
+    function mostrarContraseña() {
+        var pass = document.getElementById("password");
+        pass.type = pass.type === "password" ? "text" : "password";
+    }
+</script>
+</html>
